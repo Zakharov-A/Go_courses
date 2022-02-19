@@ -16,9 +16,6 @@ func (c contact) printInfo() {
     c.firstName, c.lastName, c.phoneNumber, c.email, c.address, c.dateDfBirth)
 }
 
-func(c *contact) setName(name string) {
-  c.firstName = name
-}
 
 func main() {
   c1 := contact{
@@ -29,8 +26,6 @@ func main() {
     address: "ул. Героя Шаляпина 58а, г. Новопопкинс",
     dateDfBirth: "20.12.1980",
   }
-
-  c1.setName("John")
 
   c1.printInfo()
 
