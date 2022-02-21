@@ -2,12 +2,11 @@ package main
 
 import "fmt"
 
-// var First = "word" - Глобальная переменная
-// var First = "word" - Переменная внутри пакета
+var arr = [10]int{150, 155, 9, 6, 5}
 
 func main() {
-var first = "word"
-red := 303
-  fmt.Println(first, red)
+	// arr = append(arr, 200)
+
+	fmt.Printf(`Array:%v`, arr[2])
 
 }
