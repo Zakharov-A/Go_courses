@@ -2,12 +2,12 @@ package main
 
 import "fmt"
 
-// var arr = [10]int{150, 155, 9, 6, 5}
+// var arr = [10]int{150, 155, 9, 6, 5}  //Объявление массива
 
 // func main() {
-// 	// arr = append(arr, 200)
+// 	// arr = append(arr, 200)  //Добавление элемента массива
 
-// 	fmt.Printf(`Array:%v`, arr[2])
+// 	fmt.Printf(`Array:%v`, arr[2])  //Вывод массива в консоль
 
 // }
 
