@@ -30,14 +30,23 @@ func main() {
 	// manyVar = a + b + c
 	// fmt.Println(manyVar)
 	//Константы
-	const (
-		ad = 5
-		bd = 10
-		c  = 15
-	)
-	sum := "summa"
-	lotConst := ad + bd + c
-	fmt.Println(sum, lotConst)
+	// const (
+	// 	ad = 5
+	// 	bd = 10
+	// 	c  = 15
+	// )
+	// sum := "summa"
+	// lotConst := ad + bd + c
+	// fmt.Println(sum, lotConst)
+
+	//Функция Scanf
+
+	fmt.Print("Enter a number: ")
+	var input float64
+	fmt.Scanf("%f", &input)
+
+	output := input * 2
+	fmt.Println(output)
 
 }
 
