@@ -3,12 +3,11 @@ package main
 import "fmt"
 
 // ----variable declaration ----
-var arr = [10]int{150, 155, 9, 6, 5, 7, 89, 99} //Объявление массива
-
-func main() {
-	arr[4] = 102
-	fmt.Println(arr)
-}
+// func main() {
+// 	var arr = [10]int{150, 155, 9, 6, 5, 7, 89, 99} //Объявление массива
+// 	arr[4] = 102
+// 	fmt.Println(arr)
+// }
 
 //----
 
@@ -29,6 +28,7 @@ func main() {
 
 // 	fmt.Println(total / 6)
 // }
+
 // ----
 
 //---- Array declaration option 2 conversion  ----
@@ -49,6 +49,7 @@ func main() {
 
 // 	fmt.Println(total / float64(len(x_exam)))
 // }
+
 //----
 
 //---- Array declaration option 2 conversion ----
@@ -68,6 +69,7 @@ func main() {
 
 // 	fmt.Println(total / float64(len(x_el)))
 // }
+
 // ----
 
 //---- Short array declaration ----
@@ -83,6 +85,7 @@ func main() {
 // 	}
 // 	fmt.Println(x_el)
 // }
+
 // ----
 
 // ---- Slices [low : high] ----
@@ -91,6 +94,7 @@ func main() {
 // 	x_l := x_el[:]
 // 	fmt.Println(x_l)
 // }
+
 // ----
 
 // ---- Slice functions append ----
@@ -99,6 +103,7 @@ func main() {
 // 	slice2 := append(slice1, 4, 5)
 // 	fmt.Println(slice1, slice2)
 // }
+
 // ----
 
 // ---- Slice functions copy ----
@@ -108,6 +113,7 @@ func main() {
 // 	copy(slice2, slice1)
 // 	fmt.Println(slice1, slice2)
 // }
+
 // ----
 
 // ---- Map [string]int ----
@@ -115,12 +121,21 @@ func main() {
 // 	x := make(map[string]int)
 // 	x["key"] = 10
 // 	fmt.Println(x["key"])
-
 // }
 
 //----
 
 // ---- Map [int]int ----
+// func main() {
+
+// 	x := make(map[int]int)
+// 	x[1] = 10
+// 	fmt.Println(x[1])
+// }
+
+// ----
+
+// ---- Programs that use maps ----
 // func main() {
 // 	elements := make(map[string]string)
 // 	elements["H"] = "Hydrogen"
@@ -134,18 +149,79 @@ func main() {
 // 	elements["F"] = "Fluorine"
 // 	elements["Ne"] = "Neon"
 
-// 	fmt.Println(elements["Li"])
+// 	fmt.Println(elements["He"])
+// 	if name, ok := elements["N"]; ok {
+// 		fmt.Println(name, ok)
+// 	}
 // }
 
 // ----
 
-// ---- variable declaration and adding an element ----
-
+// ---- Abbreviated Map Declaration ----
 // func main() {
-
-// 	var arr []float64
-// 	arr = append(arr, 200) //Добавление элемента массива
-
-// 	fmt.Printf(`Array:%v`, arr[2]) //Вывод массива в консоль
+// 	elements := map[string]string{
+// 		"\nH": "Hydrogen\n",
+// 		"He":  "Helium\n",
+// 		"Li":  "Lithium\n",
+// 		"Be":  "Beryllium\n",
+// 		"B":   "Boron\n",
+// 		"C":   "Carbon\n",
+// 		"N":   "Nitrogen\n",
+// 		"O":   "Oxygen\n",
+// 		"F":   "Fluorine\n",
+// 		"Ne":  "Neon",
+// 	}
+// 	fmt.Println(elements)
 // }
+
+// ---- Map usage example ----
+func main() {
+	elements := map[string]map[string]string{
+		"H": map[string]string{
+			"name":  "Hydrogen",
+			"state": "gas",
+		},
+		"He": map[string]string{
+			"name":  "Helium",
+			"state": "gas",
+		},
+		"Li": map[string]string{
+			"name":  "Lithium",
+			"state": "solid",
+		},
+		"Be": map[string]string{
+			"name":  "Beryllium",
+			"state": "solid",
+		},
+		"B": map[string]string{
+			"name":  "Boron",
+			"state": "solid",
+		},
+		"C": map[string]string{
+			"name":  "Carbon",
+			"state": "solid",
+		},
+		"N": map[string]string{
+			"name":  "Nitrogen",
+			"state": "gas",
+		},
+		"O": map[string]string{
+			"name":  "Oxygen",
+			"state": "gas",
+		},
+		"F": map[string]string{
+			"name":  "Fluorine",
+			"state": "gas",
+		},
+		"Ne": map[string]string{
+			"name":  "Neon",
+			"state": "gas",
+		},
+	}
+
+	if el, ok := elements["O"]; ok {
+		fmt.Println(el["name"], el["state"])
+	}
+}
+
 // ----
