@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-// ----variable declaration ----
+// ---- array declaration option 1 ----
 // func main() {
 // 	var arr = [10]int{150, 155, 9, 6, 5, 7, 89, 99} //Объявление массива
 // 	arr[4] = 102
@@ -10,6 +10,16 @@ import "fmt"
 // }
 
 //----
+
+// ---- Array element output ----
+
+// func main() {
+// 	var arr = [10]int{150, 155, 9, 6, 5, 7, 89, 99} //Объявление массива
+// 	arr[4] = 102
+// 	fmt.Println(arr[3])
+// }
+
+// ----
 
 //---- Array declaration option 1  ----
 // func main() {
@@ -52,7 +62,7 @@ import "fmt"
 
 //----
 
-//---- Array declaration option 2 conversion ----
+//---- Array declaration option 3 conversion ----
 // func main() {
 // 	var x_el [6]float64
 // 	x_el[0] = 98
@@ -73,22 +83,16 @@ import "fmt"
 // ----
 
 //---- Short array declaration ----
+
 // func main() {
-// x_el := [6]float64{98, 93, 77, 82, 83, 99} //option 1
-// 	x_el := [6]float64{ //option 1
-// 		98,
-// 		93,
-// 		77,
-// 		82,
-// 		83,
-// 		99,
-// 	}
+// 	x_el := [6]float64{98, 93, 77, 82, 83, 99}
 // 	fmt.Println(x_el)
 // }
 
 // ----
 
 // ---- Slices [low : high] ----
+
 // func main() {
 // 	x_el := []float64{98, 93, 77, 82, 83, 99}
 // 	x_l := x_el[:]
@@ -98,6 +102,7 @@ import "fmt"
 // ----
 
 // ---- Slice functions append ----
+
 // func main() {
 // 	slice1 := []int{1, 2, 3}
 // 	slice2 := append(slice1, 4, 5)
@@ -107,6 +112,7 @@ import "fmt"
 // ----
 
 // ---- Slice functions copy ----
+
 // func main() {
 // 	slice1 := []int{5, 4, 3}
 // 	slice2 := make([]int, 2)
@@ -117,6 +123,7 @@ import "fmt"
 // ----
 
 // ---- Map [string]int ----
+
 // func main() {
 // 	x := make(map[string]int)
 // 	x["key"] = 10
@@ -158,6 +165,7 @@ import "fmt"
 // ----
 
 // ---- Abbreviated Map Declaration ----
+
 // func main() {
 // 	elements := map[string]string{
 // 		"\nH": "Hydrogen\n",
@@ -175,6 +183,7 @@ import "fmt"
 // }
 
 // ---- Map usage example ----
+
 func main() {
 	elements := map[string]map[string]string{
 		"H": map[string]string{
