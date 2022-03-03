@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+// ---- Data types ----
+
 var i8 int8 = 15
 var i16 int16 = -20345
 var u64 uint64 = 50965
@@ -16,3 +18,5 @@ func main() {
 func Run(print string) {
 	fmt.Printf(`#{print}`)
 }
+
+// ----

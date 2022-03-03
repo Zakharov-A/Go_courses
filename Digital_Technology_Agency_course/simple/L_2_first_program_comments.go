@@ -14,7 +14,7 @@ import "fmt"
 // ---- ----
 
 func main() {
-	var Hi_You = "Hi World!"
+	var Hi_You = "I'm super man!"
 	Run(Hi_You)
 }
 

@@ -11,11 +11,9 @@ import "fmt"
 // func main() {
 // 	first := "Roghan the best!"
 // 	Run(first)
-//
-//
-//
+
 // }
-//
+
 // func Run(xxx string) {
 // 	fmt.Printf("%s", xxx)
 // }
@@ -24,9 +22,9 @@ import "fmt"
 
 // ---- Hello ----
 // func main() {
-//     var x string
-//     x = "Hello World"
-//     fmt.Println(x)
+// 	var x string
+// 	x = "Hello World"
+// 	fmt.Println(x)
 // }
 
 // ----
@@ -34,11 +32,11 @@ import "fmt"
 // ---- "Addition of strings" ----
 // func main() {
 // 	var x string
-// x = "first "
-// fmt.Println(x)
-// x = x + "second"
-// fmt.Println(x)
-//
+// 	x = "first "
+// 	fmt.Println(x)
+// 	x = x + "second"
+// 	fmt.Println(x)
+
 // }
 
 // ----
@@ -48,6 +46,8 @@ import "fmt"
 //     const x string = "Hello World"
 //     fmt.Println(x)
 // }
+
+// ----
 
 // ---- Defining Multiple Variables ----
 // func main() {
@@ -60,16 +60,18 @@ import "fmt"
 // fmt.Println(a, b, c)
 // }
 
+// ----
+
 // ---- Program example ----
 
 func main() {
-    fmt.Print("Enter a number: ")
-    var input float64
-    fmt.Scanf("%f", &input)
+	fmt.Print("Enter a number: ")
+	var input float64
+	fmt.Scanf("%f", &input)
 
-    output := input * 2
+	output := input * 2
 
-    fmt.Println(output)
-	}
+	fmt.Println(output)
+}
 
 // ----
