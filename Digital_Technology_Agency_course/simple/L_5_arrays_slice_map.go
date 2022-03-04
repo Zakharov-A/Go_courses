@@ -184,53 +184,87 @@ import "fmt"
 
 // ---- Map usage example ----
 
-func main() {
-	elements := map[string]map[string]string{
-		"H": map[string]string{
-			"name":  "Hydrogen",
-			"state": "gas",
-		},
-		"He": map[string]string{
-			"name":  "Helium",
-			"state": "gas",
-		},
-		"Li": map[string]string{
-			"name":  "Lithium",
-			"state": "solid",
-		},
-		"Be": map[string]string{
-			"name":  "Beryllium",
-			"state": "solid",
-		},
-		"B": map[string]string{
-			"name":  "Boron",
-			"state": "solid",
-		},
-		"C": map[string]string{
-			"name":  "Carbon",
-			"state": "solid",
-		},
-		"N": map[string]string{
-			"name":  "Nitrogen",
-			"state": "gas",
-		},
-		"O": map[string]string{
-			"name":  "Oxygen",
-			"state": "gas",
-		},
-		"F": map[string]string{
-			"name":  "Fluorine",
-			"state": "gas",
-		},
-		"Ne": map[string]string{
-			"name":  "Neon",
-			"state": "gas",
-		},
-	}
+// func main() {
+// 	elements := map[string]map[string]string{
+// 		"H": map[string]string{
+// 			"name":  "Hydrogen",
+// 			"state": "gas",
+// 		},
+// 		"He": map[string]string{
+// 			"name":  "Helium",
+// 			"state": "gas",
+// 		},
+// 		"Li": map[string]string{
+// 			"name":  "Lithium",
+// 			"state": "solid",
+// 		},
+// 		"Be": map[string]string{
+// 			"name":  "Beryllium",
+// 			"state": "solid",
+// 		},
+// 		"B": map[string]string{
+// 			"name":  "Boron",
+// 			"state": "solid",
+// 		},
+// 		"C": map[string]string{
+// 			"name":  "Carbon",
+// 			"state": "solid",
+// 		},
+// 		"N": map[string]string{
+// 			"name":  "Nitrogen",
+// 			"state": "gas",
+// 		},
+// 		"O": map[string]string{
+// 			"name":  "Oxygen",
+// 			"state": "gas",
+// 		},
+// 		"F": map[string]string{
+// 			"name":  "Fluorine",
+// 			"state": "gas",
+// 		},
+// 		"Ne": map[string]string{
+// 			"name":  "Neon",
+// 			"state": "gas",
+// 		},
+// 	}
 
-	if el, ok := elements["O"]; ok {
-		fmt.Println(el["name"], el["state"])
-	}
+// 	if el, ok := elements["O"]; ok {
+// 		fmt.Println(el["name"], el["state"])
+// 	}
+// }
+
+// ----
+
+// ---- slice indexing ----
+
+// var arr = []int{4, 2, 3}
+
+// func main() {
+// 	fmt.Printf("Array:%v", arr[1])
+
+// }
+
+// ----
+
+// ---- slice indexing append  ----
+
+// var arr = []int{4, 2, 3}
+
+// func main() {
+// 	arr = append(arr, 200)
+// 	fmt.Printf("Array:%v", arr)
+
+// }
+
+// ----
+
+// ---- Array indexing ----
+
+var arr = [7]int{4, 2, 3, 8, 11}
+
+func main() {
+	fmt.Printf("Array:%v", arr)
+
 }
 
 // ----
