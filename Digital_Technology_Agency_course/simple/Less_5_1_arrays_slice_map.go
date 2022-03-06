@@ -219,7 +219,7 @@ func main() {
 		},
 	}
 
-	if el, ok := elements["O"]; ok {
+	if el, ok := elements["F"]; ok {
 		fmt.Println(el["name"], el["state"])
 	}
 }
