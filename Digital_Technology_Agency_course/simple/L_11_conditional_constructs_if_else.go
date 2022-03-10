@@ -104,12 +104,44 @@ import "fmt"
 // ----
 
 // ---- Printing odd numbers ----
+// func main() {
+// 	for i := 1; i <= 100; i++ {
+// 		if i%3 == 0 {
+// 			fmt.Println(i)
+// 		}
+// 	}
+// }
+
+// ----
+
+// ---- if, else if----
+// func main() {
+// 	a := 8
+// 	b := 11
+// 	if a < b {
+// 		fmt.Printf("a < b %v", a < b)
+// 	} else if a > b {
+// 		fmt.Printf("a > b")
+// 	} else {
+// 		fmt.Printf("Another way!")
+// 	}
+
+// }
+
+// ----
+
+// ---- if, else if----
 func main() {
-	for i := 1; i <= 100; i++ {
-		if i%3 == 0 {
-			fmt.Println(i)
-		}
+	a := 9
+	switch a {
+	case 5:
+		fmt.Println("a = 5")
+	case 8:
+		fmt.Println("a = 8")
+	default:
+		fmt.Println("Unknown Number")
 	}
+
 }
 
 // ----
