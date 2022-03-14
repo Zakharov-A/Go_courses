@@ -132,7 +132,7 @@ import "fmt"
 
 // ---- if, else if----
 func main() {
-	a := 9
+	a := 8
 	switch a {
 	case 5:
 		fmt.Println("a = 5")
