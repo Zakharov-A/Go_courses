@@ -2,15 +2,76 @@ package main
 
 import "fmt"
 
-type Pc struct {
+// ---- nested structures ----
+
+// type Cpu struct {
+// 	Prod string
+// 	Core int
+// }
+
+// type Pc struct {
+// 	Cpu Cpu
+// }
+
+// func main() {
+// 	var p Pc = Pc{
+// 		Cpu: Cpu{
+// 			Prod: "Intel",
+// 			Core: 8,
+// 		},
+// 	}
+// 	fmt.Printf("PC CPU = [%v]", p.Cpu)
+
+// }
+
+// ----
+
+// ---- displaying part of the information ----
+
+// type Cpu struct {
+// 	Prod string
+// 	Core int
+// }
+
+// type Pc struct {
+// 	Cpu Cpu
+// }
+
+// func main() {
+// 	var p Pc = Pc{
+// 		Cpu: Cpu{
+// 			Prod: "Intel",
+// 			Core: 8,
+// 		},
+// 	}
+// 	fmt.Printf("PC CPU(Core) = [%v]", p.Cpu.Core)
+// 	fmt.Printf("\nPC CPU(Prod) = [%s]", p.Cpu.Prod)
+
+// }
+
+// ----
+
+// ---- code reduction ----
+
+type Cpu struct {
+	Prod string
 	Core int
-	Hard int
+}
+
+type Pc struct {
+	Cpu
 }
 
 func main() {
-	var p Pc = Pc{}
-	p.Core = 8
-	p.Hard = 500
-	fmt.Printf("Core = [%d] Hard [%d]", p.Core, p.Hard)
+	var p Pc = Pc{
+		Cpu: Cpu{
+			Prod: "Intel",
+			Core: 8,
+		},
+	}
+	fmt.Printf("PC CPU(Core) = [%v]", p.Core)
+	fmt.Printf("\nPC CPU(Prod) = [%s]", p.Prod)
 
 }
+
+// ----
