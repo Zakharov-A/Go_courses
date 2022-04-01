@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // ---- Struct Methods ----
 
 type Cpu struct {
@@ -33,6 +35,7 @@ func main() {
 	}
 	p.On()
 	p.Off()
+	fmt.Printf("Pc CPU - [%v]", p.Cpu)
 }
 
 // ----
