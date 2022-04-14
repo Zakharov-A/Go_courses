@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
-
+import "fmt"
 
 // ---- Design patterns bridge----
 
