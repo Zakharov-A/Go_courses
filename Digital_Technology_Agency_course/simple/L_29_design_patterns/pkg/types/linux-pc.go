@@ -6,7 +6,7 @@ type LinuxPc struct {
 	scanner base.Scanner
 }
 
-func (pc *LinuxPC) AddScanner(scanner base.Scanner) {
+func (pc *LinuxPc) AddScanner(scanner base.Scanner) {
 	pc.scanner = scanner
 
 }
