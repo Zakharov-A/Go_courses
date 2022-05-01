@@ -1,6 +1,6 @@
 package l_34
 
-User struct {
+type User struct {
 	Name string
 	Card *Card
 }
