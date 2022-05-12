@@ -263,7 +263,7 @@ import "fmt"
 var arr = [7]int{4, 2, 3, 8, 11}
 
 func main() {
-<<<<<<< HEAD:Digital_Technology_Agency_course/simple/Less_5_1_arrays_slice_map.go
+
 	elements := map[string]map[string]string{
 		"H": map[string]string{
 			"name":  "Hydrogen",
@@ -310,10 +310,9 @@ func main() {
 	if el, ok := elements["F"]; ok {
 		fmt.Println(el["name"], el["state"])
 	}
-=======
+
 	fmt.Printf("Array:%v", arr)
 
->>>>>>> ab20dbb00266a0e4d352c6833de82b82546c7e72:Digital_Technology_Agency_course/simple/L_5_arrays_slice_map.go
 }
 
 // ----
