@@ -35,13 +35,14 @@ func main() {
 
 	printPerson(name, age, weight)
 	printPerson("Den", 35, 78.7)
+	printPerson("Li", 38, 73.7)
 
 	fmt.Print(isAdult(15))
 
 }
 
 func printPerson(name string, age int, weight float32) {
-	fmt.Printf("Name: %s\nAge: %d\nweigt: %.1f\n", name, age, weight)
+	fmt.Printf("Name: %s\nAge: %d\nweigt: %.2f\n", name, age, weight)
 }
 
 func isAdult(age int) bool {
