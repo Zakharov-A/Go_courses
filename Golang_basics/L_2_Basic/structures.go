@@ -23,16 +23,18 @@ import "fmt"
 // ----
 
 type Pc struct {
-	Core  int
-	Hard  int
-	Brand string
+	Core   int
+	Hard   int
+	Brand  string
+	Router string
 }
 
 func main() {
 	var Test Pc = Pc{}
+	Test.Hard = 1000
 	Test.Core = 8
 	Test.Brand = "ADM"
-	fmt.Printf("\nCore = [%d] \nHard = [%d] \nBrand = [%s] \n", Test.Core, Test.Hard, Test.Brand)
-	print("\nFinish\n")
+	Test.Router = "Mi"
+	fmt.Printf("\nCore = [%d] \nHard = [%d] \nBrand = [%s] \nRouter = [%s]\n", Test.Core, Test.Hard, Test.Brand, Test.Router)
 
 }
