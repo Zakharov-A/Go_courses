@@ -16,7 +16,9 @@ func main() {
 	first1, second1 := 23, 45
 	Greet()
 	PersonGreet("Sam")
+	PersonGreet("Si")
 	FioGreet("John", "Smith")
+	FioGreetNum("John", 66)
 	sum := Sum(first, second)
 	fmt.Println(sum)
 	summa, multiply, subtraction := SumAndMultiply(first, second, third)
@@ -36,6 +38,10 @@ func PersonGreet(name string) {
 
 func FioGreet(name, surname string) {
 	fmt.Printf("Hi %s %s\n", name, surname)
+}
+
+func FioGreetNum(name string, surname int) {
+	fmt.Printf("Hi %s %d\n", name, surname)
 }
 
 func Sum(first, second int) int {
