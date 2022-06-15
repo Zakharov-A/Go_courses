@@ -4,16 +4,7 @@ import "fmt"
 
 func main() {
 
-	fmt.Println()
-
-	first, second := 3, 6
-
-	var multiplier func(x, y int) int
-	multiplier = func(x, y int) int { return x * y }
-	fmt.Println(multiplier(first, second))
-
-	divider := func(x, y int) int { return x / y }
-	fmt.Println(divider(second, first))
+	first, second := 1, 2
 
 	sumFunc := func(x, y int) int {
 		return x + y
