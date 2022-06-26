@@ -7,6 +7,9 @@ func main() {
 	var intPointer *int
 	fmt.Printf("%T %#v \n", intPointer, intPointer)
 
+	var intPointer2 *string
+	fmt.Printf("%T %#v \n", intPointer2, intPointer2)
+
 	// Getting not-nil pointers
 	// variadle
 	var a int64 = 7
