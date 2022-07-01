@@ -26,17 +26,17 @@ func main() {
 	// fmt.Println(int(customInt))
 
 	// create default
-	var John Person
-	fmt.Printf("%T, %T, %#v \n", John, John, John)
+	// var John Person
+	// fmt.Printf("%T, %T, %#v \n", John, John, John)
 
-	John = Person{}
-	fmt.Printf("%T, %T, %#v \n", John, John, John)
+	// John = Person{}
+	// fmt.Printf("%T, %T, %#v \n", John, John, John)
 
 	// fields accessing
-	John.Name = "John"
-	John.Surname = "Wu"
-	John.Age = 38
-	fmt.Println(John)
+	// John.Name = "John"
+	// John.Surname = "Wu"
+	// John.Age = 38
+	// fmt.Println(John)
 
 	// create with named field
 	Brad := Person{
@@ -52,7 +52,7 @@ func main() {
 
 	// field accessing through the pointer
 	pVladimir := &Vladimir
-	fmt.Println((*pVladimir).Age)
+	// fmt.Println((*pVladimir).Age)
 	fmt.Println(pVladimir.Age)
 
 	// create pointer to struct
