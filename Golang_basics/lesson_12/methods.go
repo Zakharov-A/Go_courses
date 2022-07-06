@@ -32,51 +32,51 @@ type Tester interface {
 
 func main() {
 
-	// definition()
+	definition()
 	rules()
 
 }
 
-// type Square struct {
-// 	Side int
-// }
+type Square struct {
+	Side int
+}
 
-// func (s Square) Perimeter() {
-// 	fmt.Printf("%T, %#v \n", s, s)
-// 	fmt.Printf("figure perimetter: %d \n", s.Side*4)
-// }
+func (s Square) Perimeter() {
+	fmt.Printf("%T, %#v \n", s, s)
+	fmt.Printf("figure perimetter: %d \n", s.Side*4)
+}
 
-// func (s *Square) Scale(multiplier int) {
-// 	fmt.Printf("%T, %#v \n", s, s)
-// 	s.Side *= multiplier
-// 	fmt.Printf("%T, %#v \n", s, s)
+func (s *Square) Scale(multiplier int) {
+	fmt.Printf("%T, %#v \n", s, s)
+	s.Side *= multiplier
+	fmt.Printf("%T, %#v \n", s, s)
 
-// }
+}
 
-// func (s Square) WrongScale(multiplier int) {
-// 	fmt.Printf("%T, %#v, \n", s, s)
-// 	s.Side *= multiplier
-// 	fmt.Printf("%T, %#v \n", s, s)
-// }
+func (s Square) WrongScale(multiplier int) {
+	fmt.Printf("%T, %#v, \n", s, s)
+	s.Side *= multiplier
+	fmt.Printf("%T, %#v \n", s, s)
+}
 
-// func definition() {
-// 	square := Square{Side: 4}
-// 	pSquare := &square
+func definition() {
+	square := Square{Side: 4}
+	pSquare := &square
 
-// 	square2 := Square{Side: 2}
+	square2 := Square{Side: 2}
 
-// 	square.Perimeter()
-// 	square2.Perimeter()
+	square.Perimeter()
+	square2.Perimeter()
 
-// 	pSquare.Scale(2)
+	pSquare.Scale(2)
 
-// 	pSquare.Perimeter()
-// 	square.Scale(2)
-// 	pSquare.Perimeter()
+	pSquare.Perimeter()
+	square.Scale(2)
+	pSquare.Perimeter()
 
-// 	square.WrongScale(2)
-// 	square.Perimeter()
-// }
+	square.WrongScale(2)
+	square.Perimeter()
+}
 
 func rules() {
 	// 1. The type must be declared in the curret pacage.
