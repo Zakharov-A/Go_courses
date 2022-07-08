@@ -40,6 +40,7 @@ func interfaceValues() {
 		fmt.Println("Runner is nil")
 	}
 	// runner = int64()
+	// runner.Run()
 
 	var unnamedRunner *Human
 	fmt.Printf(" Type:%T Value: %#v\n", unnamedRunner, unnamedRunner)
@@ -55,5 +56,17 @@ func interfaceValues() {
 
 	runner = namedRunner
 	fmt.Printf("Type: %T Value: %#v\n", runner, runner)
+
+	var emptyInterface interface{} = unnamedRunner
+	fmt.Printf("Type: %T Value: %#v\n", emptyInterface, emptyInterface)
+
+	emptyInterface = runner
+	fmt.Printf("Type: %T Value: %#v\n", emptyInterface, emptyInterface)
+
+	emptyInterface = int64(1)
+	fmt.Printf("Type: %T Value: %#v\n", emptyInterface, emptyInterface)
+
+	emptyInterface = true
+	fmt.Printf("Type: %T Value: %#v\n", emptyInterface, emptyInterface)
 
 }
